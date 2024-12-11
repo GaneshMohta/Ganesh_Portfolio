@@ -82,6 +82,22 @@
 
 }
 
+.yellow-text-gradient {
+  background: #f12711;
+  background: -webkit-linear-gradient(
+    to top,
+    #cb1f0c,
+    #f8ad0d
+  );
+  background: linear-gradient(
+    to top,
+    #ff351e,
+    #eba715
+  );
+
+}
+
+
 
 
 

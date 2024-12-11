@@ -260,8 +260,8 @@ import {
         },
       ],
       image: ThreeD,
-      source_link: "https://shinchancode.github.io/3d-react-portfolio/",
-      source_code_link: "https://github.com/shinchancode/3d-react-portfolio",
+      source_link: "https://spontaneous-souffle-52fa37.netlify.app/",
+      source_code_link: "https://github.com/GaneshMohta/Ganesh_Portfolio",
     },
   ];
 

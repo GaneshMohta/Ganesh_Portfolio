@@ -82,7 +82,7 @@ const Hero = () => {
           href="https://linktr.ee/" target="_blank">
           <BiLinkAlt />
         </a> */}
-        <button onClick={dark_bright} className="text-[25px] pe-4">{!Theme ?<MdWbSunny className="text-gray-600"/> : <FaMoon className="text-gray-600"/> }</button>
+        <button onClick={dark_bright} className="text-[25px] pe-4">{Theme ?<MdWbSunny className="text-gray-600"/> : <FaMoon className="text-gray-600"/> }</button>
 
       </div>
 

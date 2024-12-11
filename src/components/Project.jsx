@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Next, Prev } from "../Redux/nextSlice";
+import { demo , github } from "../assets";
 import "./Project.scss";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
@@ -86,21 +87,44 @@ const Project = () => {
         <BsArrowLeftShort className="text-6xl text-gray-500" />
 </button>
   {
-  [...Array(3)].map((_ ,offset)=>{
-    const index1 = (index + offset ) % My_Project.length;
-    const item = My_Project[index1];
 
-    return (
-      <div key={index1}  className={`card orange-text-gradient `}>
-        <img src={item.image} alt={item.title} />
-            <div className="text-center mt-2 pb-9">
-              <h1 className="text-xl font-bold">{item.title}</h1>
-              <p className="text-white w-[30vw]  mt-5">{item.description}</p>
-        </div>
+[...Array(3)].map((_, offset) => {
+  const index1 = (index + offset) % My_Project.length;
+  const item = My_Project[index1];
+
+  return (
+    <div
+      key={index1}
+      className={`card orange-text-gradient ${offset === 1 ? "active" : "inactive"}`}
+    >
+      <img src={item.image} alt={item.title} className="w-full h-40 object-cover rounded-lg" />
+      <div className="text-center mt-4">
+        <h1 className="text-2xl font-bold text-white">{item.title}</h1>
+        <p className="text-gray-200  mx-auto mt-2 text-sm line-clamp-3 sectionSubText" title={item.description}>
+          {item.description}
+        </p>
       </div>
-    )
-
-  })
+      <div className="flex gap-3 justify-center mt-4">
+        <a
+          href={item.source_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 flex justify-center items-center rounded-full yellow-text-gradient p-2 cursor-pointer shadow-lg hover:scale-110 transition-transform"
+        >
+          <img src={demo} alt="demo" className="img-logo" />
+        </a>
+        <a
+          href={item.source_code_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 flex justify-center items-center rounded-full yellow-text-gradient p-2 cursor-pointer shadow-lg hover:scale-110 transition-transform"
+        >
+          <img src={github} alt="github" className="" />
+        </a>
+      </div>
+    </div>
+  );
+})
 }
 <button onClick={handleNext} className="arrow-btn">
         <BsArrowRightShort className="text-6xl text-gray-500" />
