@@ -20,14 +20,14 @@ const FeedbackCard = ({
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className='Box2 p-5 rounded-3xl xs:w-[320px] w-full'
   >
-      <div className='mt-7 flex flex-col justify-between items-center gap-1'>
+      <div className='mt-7 flex flex-col items-center gap-1 flex-grow'>
         <img
           src={image}
           alt={`feedback_by-${name}`}
-          width="80" height="80"
-          className='rounded-full object-cover'
+
+          className='rounded-sm h-24'
         />
-        <div className='mt-3 flex-1 flex flex-col'>
+        <div className='mt-3 flex-1 flex flex-col flex-shrink'>
           <p className='text-center text-white font-medium text-[16px] '>
             <span className='text-center blue-text-gradient'>{name}</span>
           </p>

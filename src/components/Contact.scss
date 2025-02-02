@@ -25,20 +25,24 @@
 
     display: flex;
     flex-direction: column;
+    width: fit-content;
+    text-align: center;
+    justify-content: center;
     gap: 1.2rem;
+
   }
-  
+
   .contact__option {
     display: flex;
     flex-direction: row;
-    padding: 0.6rem;
+    padding: 0.9rem;
     border-radius: 1.2rem;
     text-align: center;
     align-items: center;
     border: 1px solid white;
     gap: 0.8rem;
   }
-  
+
   .contact__option:hover {
     text-decoration: underline;
   }

@@ -100,7 +100,7 @@ const Project = () => {
       <img src={item.image} alt={item.title} className="w-full h-40 object-cover rounded-lg" />
       <div className="text-center mt-4">
         <h1 className="text-2xl font-bold text-white">{item.title}</h1>
-        <p className="text-gray-200  mx-auto mt-2 text-sm line-clamp-3 sectionSubText" title={item.description}>
+        <p className="text-orange-400  mx-auto mt-2 text-sm line-clamp-3 sectionSubText" title={item.description}>
           {item.description}
         </p>
       </div>

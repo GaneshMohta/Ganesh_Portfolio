@@ -86,12 +86,12 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='flex-[0.5] bg-black-100 p-8 rounded-2xl earth'
+        className='flex-[0.5] bg-black-100 p-6 rounded-2xl earth'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
+        {/* <form
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-3 flex flex-col gap-8 form1'
@@ -137,16 +137,16 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
-        </form>
+        </form> */}
 
         <div className="mt-5 contact__options">
           <article className="contact__option">
-            <MdEmail />
-            <a href="mailto:ganimaheshwari07@gmail.com" target="_blank" className="blue-text-gradient">ganimaheshwari07@gmail.com</a>
+            <MdEmail className="text-white" />
+            <a href="mailto:ganimaheshwari07@gmail.com" target="_blank" className="text-white">ganimaheshwari07@gmail.com</a>
           </article>
           <article className="contact__option">
-            <BsWhatsapp />
-            <a href="https://api.whatsapp.com/send/?phone=916374620670&text&app_absent=0&lang=en" target="_blank" className="blue-text-gradient">
+            <BsWhatsapp className="text-white"/>
+            <a href="https://api.whatsapp.com/send/?phone=916374620670&text&app_absent=0&lang=en" target="_blank" className="text-white">
               +91 6374620670
             </a>
           </article>

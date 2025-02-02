@@ -33,7 +33,7 @@ const Hero = () => {
       document.getElementsByClassName("heroHeadText")[0].style.color = "white";
       document.getElementsByClassName("heroSubText")[0].style.color ="#dcdcdc8e"
       elements.forEach(element => {
-        element.style.color = 'white';
+        element.style.color = "white";
       })
     }
 
